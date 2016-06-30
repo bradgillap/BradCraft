@@ -1,0 +1,35 @@
+morty: 
+  type: assignment 
+  debug: false 
+  interact scripts: 
+  - morty_the_npc_chat
+  actions: 
+    on assignment: 
+      - trigger name:click state:true 
+      - trigger name:proximity state:true radius:5 
+    on enter proximity: 
+      - narrate format:chatformat "Just uhh.. walk into the portal. This portal right here. That's the portal." 
+morty_the_npc_chat:
+    type: interact
+    steps:
+        1:
+            click trigger:
+                script:
+                - random {
+                    - narrate format:chatformat "Nobody exists on purpose, nobody belongs anywhere, everyboyd is going to die. Come play minecraft."
+                    - narrate format:chatformat "Why would a poptart want to live inside a toaster? I mean, that would be like the scariest place for them."
+                    - narrate format:chatformat "ahh gee you got me there Rick."
+                    - narrate format:chatformat "Why are you doing this bit? We're gonna die!"
+                    - narrate format:chatformat "You are like Hitler, except...Hitler cared about Germany, or something"
+                    - narrate format:chatformat "Aw, cmon Rick. That doesn't seem so bad."
+                    }
+            chat trigger:
+                script: 
+                1:
+                    trigger: /Hello/
+                    script:
+                    - narrate format:chatformat "hello there"
+                2:
+                    trigger: /Goodbye/
+                    script:
+                    - narrate format:chatformat "See ya"

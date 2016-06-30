@@ -1,0 +1,36 @@
+homer_simpson: 
+  type: assignment 
+  debug: false 
+  interact scripts: 
+  - homer_the_npc_chat
+  actions: 
+    on assignment: 
+      - trigger name:click state:true 
+      - trigger name:proximity state:true radius:5 
+    on enter proximity: 
+      - narrate format:chatformat "Just because I don't care doesn't mean I don't understand." 
+homer_the_npc_chat:
+    type: interact
+    steps:
+        1:
+            click trigger:
+                script:
+                - random {
+                    - narrate format:chatformat "Donuts. Is there anything they can't do?"
+                    - narrate format:chatformat "Marriage is like a coffin and each kid is another nail."
+                    - narrate format:chatformat "I'm having the best day of my life, and I owe it all to not going to Church!"
+                    - narrate format:chatformat "Kill my boss? Do I dare live out the American dream? "
+                    - narrate format:chatformat "I like my beer cold, my TV loud and my homosexuals flaming."
+                    - narrate format:chatformat "Beer: The cause of, and solution to, all of life's problems."
+                    - narrate format:chatformat "In this house, we obey the laws of thermodynamics!"
+                    }
+            chat trigger:
+                script: 
+                1:
+                    trigger: /Hello/
+                    script:
+                    - narrate format:chatformat "hello there"
+                2:
+                    trigger: /Goodbye/
+                    script:
+                    - narrate format:chatformat "See ya"

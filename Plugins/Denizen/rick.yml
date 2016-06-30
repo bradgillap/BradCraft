@@ -1,0 +1,36 @@
+rick_sanchez: 
+  type: assignment 
+  debug: false 
+  interact scripts: 
+  - rick_the_npc_chat
+  actions: 
+    on assignment: 
+      - trigger name:click state:true 
+      - trigger name:proximity state:true radius:5 
+    on enter proximity: 
+      - narrate format:chatformat "Wubba-lubba-dub-dub!" 
+rick_the_npc_chat:
+    type: interact
+    steps:
+        1:
+            click trigger:
+                script:
+                - random {
+                    - narrate format:chatformat "Whatever you are asking, the answer is I'm amazing."
+                    - narrate format:chatformat "So what if the most meaningful day of your life was a simulation operating at minimum capacity."
+                    - narrate format:chatformat "What people call love, is just a chemical reaction that compels animals to breed. It hits hard <white><player.name><&2> and then it slowly fades."
+                    - narrate format:chatformat "Sometimes science is more art than science. A lot of people don't get that."
+                    - narrate format:chatformat "I just got bored, everybody out."
+                    - narrate format:chatformat "I made the stars that became the carbon in your mothers overaries. "
+                    - narrate format:chatformat "Someone has to bring a little culture and it i.. it can't be the someone whos entire culture powers my brakelights!"
+                    }
+            chat trigger:
+                script: 
+                1:
+                    trigger: /Hello/
+                    script:
+                    - narrate format:chatformat "hello there"
+                2:
+                    trigger: /Goodbye/
+                    script:
+                    - narrate format:chatformat "See ya"

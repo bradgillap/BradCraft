@@ -1,0 +1,36 @@
+reverend_lovejoy: 
+  type: assignment 
+  debug: false 
+  interact scripts: 
+  - lovejoy_the_npc_chat
+  actions: 
+    on assignment: 
+      - trigger name:click state:true 
+      - trigger name:proximity state:true radius:5 
+    on enter proximity: 
+      - narrate format:chatformat "And Brad said unto players, right click me for this servers holy rules." 
+lovejoy_the_npc_chat:
+    type: interact
+    steps:
+        1:
+            click trigger:
+                script:
+                - random {
+                    - narrate format:chatformat "Thou shalt not grief."
+                    - narrate format:chatformat "Thou shalt protect their own structures with a golden shovel."
+                    - narrate format:chatformat "Thou shalt look for help on the website first. http://bradgillap.com/mc"
+                    - narrate format:chatformat "Thou shalt be thankful in the face of issues, for this server is free."
+                    - narrate format:chatformat "Thou shalt notify a staff member or Brad of errors."
+                    - narrate format:chatformat "Thou shalt never asketh for unreasonable privileges."
+                    - narrate format:chatformat "Helen and I are as happy as Adam and Eve before Eve munched us all to Hell. "
+                    }
+            chat trigger:
+                script: 
+                1:
+                    trigger: /Hello/
+                    script:
+                    - narrate format:chatformat "Hello There"
+                2:
+                    trigger: /Goodbye/
+                    script:
+                    - narrate format:chatformat "See ya"

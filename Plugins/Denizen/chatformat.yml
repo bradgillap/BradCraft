@@ -1,0 +1,3 @@
+chatformat: 
+    type: format
+    format: <&b><npc.name><&7><&co> <&2><text>
