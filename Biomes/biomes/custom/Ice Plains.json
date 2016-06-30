@@ -1,0 +1,1286 @@
+{
+  "enabled": true,
+  "biomeType": "TUNDRA",
+  "useDungeons": true,
+  "dungeonChance": 8,
+  "useMineShafts": true,
+  "useStrongholds": true,
+  "useVillages": false,
+  "useTemples": false,
+  "useNetherFortress": false,
+  "useCaves": true,
+  "useMonuments": false,
+  "useRavines": false,
+  "useWitchHuts": false,
+  "usePyramids": false,
+  "useJungleTemples": false,
+  "useIgloos": true,
+  "useFossils": true,
+  "useWaterLakes": false,
+  "useLavaLakes": false,
+  "useRivers": true,
+  "useNativePainting": false,
+  "useNativeStructure": false,
+  "fossilChance": 99,
+  "lavaLakeChance": 60,
+  "waterLakeChance": 4,
+  "ores": [
+    {
+      "type": "DIRT",
+      "data": 0,
+      "size": 33,
+      "count": 10,
+      "minHeight": 0,
+      "maxHeight": 256
+    },
+    {
+      "type": "GRAVEL",
+      "data": 0,
+      "size": 33,
+      "count": 8,
+      "minHeight": 0,
+      "maxHeight": 256
+    },
+    {
+      "type": "STONE",
+      "data": 1,
+      "size": 33,
+      "count": 10,
+      "minHeight": 0,
+      "maxHeight": 80
+    },
+    {
+      "type": "STONE",
+      "data": 3,
+      "size": 33,
+      "count": 10,
+      "minHeight": 0,
+      "maxHeight": 80
+    },
+    {
+      "type": "STONE",
+      "data": 5,
+      "size": 33,
+      "count": 10,
+      "minHeight": 0,
+      "maxHeight": 80
+    },
+    {
+      "type": "COAL_ORE",
+      "data": 0,
+      "size": 25,
+      "count": 32,
+      "minHeight": 0,
+      "maxHeight": 128
+    },
+    {
+      "type": "IRON_ORE",
+      "data": 0,
+      "size": 15,
+      "count": 32,
+      "minHeight": 0,
+      "maxHeight": 64
+    },
+    {
+      "type": "GOLD_ORE",
+      "data": 0,
+      "size": 15,
+      "count": 5,
+      "minHeight": 0,
+      "maxHeight": 32
+    },
+    {
+      "type": "REDSTONE_ORE",
+      "data": 0,
+      "size": 12,
+      "count": 8,
+      "minHeight": 0,
+      "maxHeight": 16
+    },
+    {
+      "type": "DIAMOND_ORE",
+      "data": 0,
+      "size": 8,
+      "count": 3,
+      "minHeight": 0,
+      "maxHeight": 16
+    },
+    {
+      "type": "LAPIS_ORE",
+      "data": 0,
+      "size": 8,
+      "count": 1,
+      "minHeight": 0,
+      "maxHeight": 32
+    },
+    {
+      "type": "EMERALD_ORE",
+      "data": 0,
+      "size": 8,
+      "count": 10,
+      "minHeight": 4,
+      "maxHeight": 32
+    }
+  ],
+  "terrainSettings": {
+    "subTerrains": [
+      {
+        "provider": "EWG",
+        "name": "Pine Forest",
+        "xModifier": 1.0,
+        "yModifer": 1.0,
+        "zModifer": 1.0,
+        "yOffset": 0
+      }
+    ]
+  },
+  "overlaySettings": {
+    "spawnLillypads": false,
+    "spawnCactus": false,
+    "spawnSnowLayers": false,
+    "spawnIceOnWater": true,
+    "minRiver": 4.0,
+    "groundDepth": 13,
+    "surfaceDepth": 1,
+    "surfaceBlocks": [
+      [
+        [
+          {
+            "type": "SNOW_BLOCK",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 0.0,
+                "maxInclination": 1.5
+              }
+            ]
+          },
+          1.0
+        ]
+      ],
+      [
+        [
+          {
+            "type": "SNOW_BLOCK",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 1.5,
+                "maxInclination": 3.0
+              }
+            ]
+          },
+          0.8
+        ]
+      ],
+      [
+        [
+          {
+            "type": "ICE",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 1.5,
+                "maxInclination": 7.0
+              }
+            ]
+          },
+          0.2
+        ]
+      ],
+      [
+        [
+          {
+            "type": "PACKED_ICE",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 3.0,
+                "maxInclination": 7.0
+              }
+            ]
+          },
+          0.8
+        ]
+      ],
+      [
+        [
+          {
+            "type": "PACKED_ICE",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 5.0,
+                "maxInclination": 99.0
+              }
+            ]
+          },
+          0.91
+        ]
+      ]
+    ],
+    "oceanBlocks": [
+      [
+        [
+          {
+            "type": "ICE",
+            "data": 0
+          },
+          0.3
+        ]
+      ],
+      [
+        [
+          {
+            "type": "PACKED_ICE",
+            "data": 0
+          },
+          0.7
+        ]
+      ]
+    ],
+    "groundBlocks": [
+      [
+        [
+          {
+            "type": "SNOW_BLOCK",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 0.0,
+                "maxInclination": 3.0
+              }
+            ]
+          },
+          1.0
+        ]
+      ],
+      [
+        [
+          {
+            "type": "PACKED_ICE",
+            "data": 0,
+            "inclinationsConditions": [
+              {
+                "minInclination": 3.0,
+                "maxInclination": 99.0
+              }
+            ]
+          },
+          1.0
+        ]
+      ]
+    ],
+    "beachBlocks": [
+      [
+        [
+          {
+            "type": "PACKED_ICE",
+            "data": 0
+          },
+          1.0
+        ]
+      ]
+    ],
+    "slabBlocks": [],
+    "stairBlocks": [],
+    "plantBlocks": [],
+    "riverBlocks": [
+      [
+        [
+          {
+            "type": "ICE",
+            "data": 0
+          },
+          1.0
+        ]
+      ]
+    ]
+  },
+  "customTrees": [
+    {
+      "name": "CUSTOM_ice_tree_m1",
+      "density": 4.0E-4,
+      "size": "MEDIUM",
+      "type": "TREES",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": true,
+      "applyPhysics": false,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": true,
+      "minY": 60,
+      "maxY": 85,
+      "maxSlope": 0.7,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_ice_tree_m2",
+      "density": 4.0E-4,
+      "size": "MEDIUM",
+      "type": "TREES",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": true,
+      "applyPhysics": false,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": true,
+      "minY": 60,
+      "maxY": 85,
+      "maxSlope": 0.7,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_ice_tree_m3",
+      "density": 4.0E-4,
+      "size": "MEDIUM",
+      "type": "TREES",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": true,
+      "applyPhysics": false,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": true,
+      "minY": 60,
+      "maxY": 85,
+      "maxSlope": 0.7,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    }
+  ],
+  "customStructures": [
+    {
+      "name": "CUSTOM_bar",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_barn1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_barn2",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_barn3",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_blacksmith",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_buildingsite",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_decor",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_farm1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_farmhouse1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_hut1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_hut2",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_hut3",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_inn",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_mill",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorbar1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorchapel",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse2",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse3",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse4",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse5",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse6",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse7",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse8",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse9",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_poorhouse10",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_richhouse1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_richhouse2",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_richhouse3",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_richhouse4",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_shop1",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_shop2",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_stables",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "name": "CUSTOM_tower",
+      "density": 0.0015,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "SNOW_BLOCK"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": false,
+      "applyPhysics": true,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": false,
+      "minY": 64,
+      "maxY": 200,
+      "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    }
+  ],
+  "maxEWGObjectsPerChunk": 6,
+  "xNoiseModifier": 1.2,
+  "yNoiseModifier": 0.7,
+  "zNoiseModifier": 1.2,
+  "lakeDepth": 50.0,
+  "baseHeight": 67,
+  "nativeBiomes": [
+    {
+      "nativeBiome": "ICE_MOUNTAINS",
+      "chance": 1.0
+    }
+  ],
+  "entitySettings": {},
+  "groundMaterials": [
+    {
+      "material": "STONE",
+      "data": 0,
+      "chance": 1.0
+    }
+  ]
+}
