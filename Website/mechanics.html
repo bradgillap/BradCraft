@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brad Craft is a production Minecraft server built from an I.T perspective leveraging minimal resources.">
+    <meta name="author" content="Bradley Gillap">
+
+    <title>Brad Craft | Mechanics | Build</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://bradgillap.com/map"><i class="fa fa-map-o" aria-hidden="true"></i> Map</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="crafting.html">Crafting</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mechanics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="active">
+                                <a href="mechanics.html"><i class="fa fa-cog fa-spin"></i> Build Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="economy.html"><i class="fa fa-money" aria-hidden="true"></i> Economy</a>
+                            </li>
+                            <li>
+                                <a href="landprotection.html"><i class="fa fa-tree" aria-hidden="true"></i> Land Protection</a>
+                            </li>
+                            <li>
+                                <a href="minecarts.html"><i class="fa fa-subway" aria-hidden="true"></i> Minecarts</a>
+                            </li>
+                            <li>
+                                <a href="postal.html"><i class="fa fa-envelope" aria-hidden="true"></i> Postal Service</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commands <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="commands-players.html"><i class="fa fa-users" aria-hidden="true"></i> Players</a>
+                            </li>
+                                                        <li>
+                                <a href="commands-staff.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Staff</a>
+                            </li>
+                            <li>
+                                <a href="commands-admin.html"><i class="fa fa-user-secret" aria-hidden="true"></i> Admin</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Build Mechanics
+                    <small>Custom Game Mechanics</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.php">Home</a>
+                    </li>
+                    <li>Mechanics</li>
+                    <li class="active">Build Mechanics</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- LightStone -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/rampendrill/drill.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Mining Drill</h3>
+                <h5>Plugin: RampenDrills</h5>
+                <p>A mining drill that will automatically mine a 2x2 tunnel storing blocks drilled in the chest. Great for creating minecart subway tunnels. </p>
+                <h4>Build Instructions</h4>
+                <ol>
+                    <li>Build the structure you see in the reference picture.</li>
+                    <li>Put some fuel in the furnace.</li>
+                    <li>Type the command <code>/drill tool</code> and you will be given a wood hoe.</li>
+                    <li>Right click the diamond block with the wood hoe to start the drill.</li>
+                </ol>
+                
+                <h4>Drill Tips</h4>
+                
+                <ul>
+                    <li>You may only have one drill at a time.</li>
+                    <li>As the operator you must stand near the drill for it to function.</li>
+                    <li>Drills require coal as fuel to run.</li>
+                    <li>Drills will stop when they reach a hole in the floor.</li>
+                    <li>Drills will stop at the following blocks
+                        <ul>
+                            <li>BedRock</li>
+                            <li>Ender_Portal_Frame</li>
+                            <li>Ender_Portal</li>
+                            <li>Chest</li>
+                            <li>Trapped_Chest</li>
+                            <li>Mob_Spawner</li>
+                            <li>Stationary_Lava</li>
+                            <li>Lava</li>
+                            
+                        </ul>
+                        
+                   
+                    </li>
+                </ul>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Iron Block</li>
+                    <li><i class="fa-li fa fa-gear"></i>Diamond Block</li>
+                    <li><i class="fa-li fa fa-gear"></i>Chest</li>
+                    <li><i class="fa-li fa fa-gear"></i>Furnace</li>
+                    <li><i class="fa-li fa fa-gear"></i>Coal</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Item Transport Pipe -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/CraftBookPipes.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Item Transport Pipes</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Pipes allow you to quickly transfer items from one place to another.</p>
+                <h4>Build Instructions / <a href="https://youtu.be/wYhc2HSlyG8"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutorial Video</a></h4>
+                <ol>
+                    <li>You need a source of the items. This can be either a block with an inventory, or a CraftBook mechanic (Or other supporting plugin) with output capabilities.</li>
+                    <li>A sticky piston with a pulsing signal pointing towards the source. This acts as a 'pump' to pull the items along. IC's that have outputs do not require a pulsing signal to pump. For ICs, it should be facing the output side of the block. This is usually the back, with the exception of the Sorter, where the outputs are the left and right sides.</li>
+                    <li>A tube of a pipe block to act as the actual pipe. This connects from the pump to the input device.</li>
+                    <li>A normal piston that acts as an input device. It should be facing what it will be putting items into. This can input items into some IC's. The input source of an IC is always the sign.</li>
+                    <li>Somewhere to put items, it can be an IC with inputs; or a container.</li>
+                    <li>A filter sign attached to either the input or output piston (or both), more info below.</li>
+                </ol>
+                <h4>Filtering instructions</h4>
+                <p>To filter pipes, just place a sign on the either sticky or normal piston, with the following text on it:</p>
+                <ol>
+                    <li>Blank</li>
+                    <li><code>[Pipe]</code></li>
+                    <li>ID's to include, seperated by commas. Eg, "1,4,5:2" to only pipe stone, cobble and birch wood.</li>
+                    <li>ID's to exclude, seperated by commas. Eg, "1,4,5:2" will pipe everything BUT stone, cobble and birch wood.</li>
+                </ol>
+                <h4>Insulation</h4>
+                <p>Pipes are allowed to connect diagonally , they have the ability to be insulated. Insulation means that if the designated insulator block is between every possible diagonal connection of 2 tube blocks, they will not connect. By default, the insulation block is wool.</p>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+
+        <!-- Mob Leads -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/CBBetterLeadsCreepers.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-pied-piper" aria-hidden="true"></i> Mob Leash</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Leash up a mob as a pet. The mob will avoid the player but attack others.</p>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Lead</li>
+                    <li><i class="fa-li fa fa-gear"></i>Spider or Zombie</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- /.row -->
+
+        <!-- Better Physics -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/CBBetterPhysicsLadder.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-chevron-down" aria-hidden="true"></i> Falling Ladders</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Falling ladders allow a player to place ladders at the top of a hole, and let them fall down creating a safe way down. Then when they reach the bottom, he/she can break the ladders and have them fall down one at a time, allowing easy breaking.</p>
+                <h4>Instructions</h4>
+                <p>Stand at the top of the hole while holding a stack of ladders and press the <kbd>Q key</kbd> to drop them. </p>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Ladder</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- /.row -->
+
+        <!-- Better Physics -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/PistonCrush.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Piston Crusher</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The crush mechanism breaks blocks that the piston head is pushed into.
+                    It requires a sign attached to the piston, with the second line being <code>[Crush]</code>. Upon being powered, the block into which the 
+                    piston extends is the block that will be destroyed.</p>
+
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Piston</li>
+                    <li><i class="fa-li fa fa-gear"></i>Sign</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Better Physics -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/PistonBounce.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Piston Bouncer</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The bounce mechanism propels blocks and entities.
+                    It requires a sign attached to the piston, with the second line being <code>[Bounce]</code>, and the third being the velocity of the bounce. The maximum bounce velocity is 10 (this is a Minecraft limitation). The block that the piston extends over is the one from which any entities or blocks that are directly above it will be propelled.</p>
+
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Piston</li>
+                    <li><i class="fa-li fa fa-gear"></i>Sign</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Better Physics -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/PistonPush.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Piston Super Push</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The SuperPush mechanism also allows air to be pushed by pistons.
+                    It requires a sign attached to the piston, with the second line being <code>[SuperPush]</code>, and the third being the amount of blocks to push. The maximum amount is 10.
+                    The third line can also allow it to push forward a distance farther than 1 in a single pulse. To do so, enter it in this format: maxdistance-pushperpulse. For example, 10-2 would push blocks up to 10 blocks away at a rate of 2 blocks per pulse.</p>
+
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Piston</li>
+                    <li><i class="fa-li fa fa-gear"></i>Sign</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Better Physics -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/PistonSticky.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Piston Super Sticky</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The SuperSticky mechanism allows blocks to be pulled that are farther than 1 block away.
+                    It requires a sign attached to the piston, with the second line being <code>[SuperSticky]</code>, and the third being the number of blocks to pull. The maximum amount is 10.
+                    The third line can also allow it to pull back a distance farther than 1 in a single pulse. To do so, enter it in this format: maxdistance-pullperpulse. For example, 10-2 would pull blocks up to 10 blocks away at a rate of 2 blocks per pulse.
+                    If AIR is on the last line, it gains the ability to pull AIR as if it were a solid block.</p>
+
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Piston</li>
+                    <li><i class="fa-li fa fa-gear"></i>Sign</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Bridges -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Bridge.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Bridges</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Bridges are configurable-width flat sections of the world that you can toggle on and off. The width of the bridge can be changed.</p>
+
+                <h4>Instructions / <a href="https://www.youtube.com/watch?v=BxZgHtwjueE"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutorial Video</a></h4>
+                <ol>
+                    <li>The bridge part made out of one material. By default, you can use cobblestone, wood, glass, double stone slab.</li>
+                    <li>One sign post Wall sign on one end, either above or below the bridge. Alternatively, a wall sign can be placed on the side of the block that the sign post would be placed above/below. The second line of the sign must be <code>[Bridge]</code>.</li>
+                    <li>A sign post Wall sign on the other end, either above or below. Alternatively, a wall sign can be placed on the side of the block that the sign post would be placed above/below. The second line of the sign must be <code>[Bridge]</code> or <code>[Bridge End]</code> (you are only able to right click the first type).</li>
+                    <li>The 3rd and 4th lines of the sign symbolize width. The 3rd line is how wide it is on the left, whilst the 4th is how wide it is on the right. For example, the 3rd line being 0 and the 4th line being 1, will be a 2 wide bridge with the second row being on the right side. The default width is 1 on both lines (Making it have a default width of 3 overall)</li>
+                </ol>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Cooking Pots -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/CraftBookCookingPot.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking Pots</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Cooking Pots allow you cook any raw foods or ores in a chest over a fire.</p>
+                <h4>Instructions</h4>
+                    <ol>
+                        <li>A block to burn, with a <code>[Cook]</code> sign on it. (Netherrack recommended).</li>
+                        <li>A fire on the block with the sign on it.</li>
+                        <li>A chest, to cook inside.</li>
+                        <li> To use the fuel source, right click the sign while holding it. If require fuel isn't enabled however, </li>
+                        <li>It is possible to use redstone as a fuel source. For each power level of redstone, the cooking pot will gain 1 fuel point.</li>
+                    </ol>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>Sign</li>
+                    <li><i class="fa-li fa fa-gear"></i>Chest</li>
+                    <li><i class="fa-li fa fa-gear"></i>Netherrack</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Doors -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Doors.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Doors</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Doors are configurable-width flat vertical sections of the world that you can toggle on and off. They are similar to bridges.</p>
+
+                <h4>Instructions</h4>
+                <ol>
+                    <li>The door part made out of one material. By default, you can use stone, dirt, cobblestone, wood, log, glass, wool, double stone slabs, stone slabs, brick, bookshelves, snow blocks, or clay blocks, but this list can be configured.</li>
+                    <li>One sign post Wall sign at the bottom in the middle. The second line of the sign must be <code>[Door Up]</code>.</li>
+                    <li>A sign post Wall sign at the top in the middle. The second line of the sign must be <code>[Door Down]</code>.</li>
+                    <li>The 3rd and 4th lines of the sign symbolize width. The 3rd line is how wide it is on the left, whilst the 4th is how wide it is on the right.</li>
+                    <li>If you want one side to be un-right clickable, use <code>[Door]</code> as the second line</li>
+                </ol>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Elevators -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Elevator_double.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Elevators</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Elevators allow you to move between floors easily (through teleportation or smooth travel). Signs must be created in the same location but above or below in order to link floors to each other.</p>
+                <p>Elevators are just wall signs Wall sign icon.png that are above or below each other. However, there are three different types of wall signs that determine what you can do on a certain level.</p>
+                <h4>Instructions / <a href="https://www.youtube.com/watch?v=wkHY48q96-Q"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutorial Video</a></h4>
+                <ul>
+                    <li>Using <code>[Lift Up]</code> on the second line of a sign allows players to right click the sign to go upwards toward any other elevator sign.</li>
+                    <li>Using <code>[Lift Down]</code> on the second line of on a sign allows players to right click the sign to go downwards toward any other elevator sign.</li>
+                    <li>Using <code>[Lift]</code> on the second line of a sign prevents anyone from right clicking the sign, but you can use it tandem with the other two signs types.</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Gates -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Gate.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Gates</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Gates are fence gates made of arbitrary shapes and sizes that can be toggled on and off.
+                    They can be toggled by right clicking a sign, or;
+                    They can be set with redstone input.
+                    When toggled off, gates leave the top row of fences intact as so it knows where to restore the fence blocks.</p>
+                <h4>Instructions / <a href="https://www.youtube.com/watch?v=tfWjFjyZHRM"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutorial Video</a></h4>
+                <ol>
+                    <li>Stacked fence blocks make up the gate. To stack fence blocks, place fences on top of each other. Repeat for each row. Make sure the top of the gate is covered.</li>
+                    <li>A nearby wall sign Wall sign with <code>[Gate]</code> on the second line.</li>
+                </ol>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        <!-- Light Switches -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Hidden_switch_1.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Hidden Switch</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Hidden switches allow you to hide a redstone lever or button behind a wall. On right click of the associated block, the lever or button will toggle. </p>
+                <h4>Instructions</h4>
+                <ol>
+                    <li>You need a block to put the sign on.</li>
+                    <li>Either a sign post or a wall sign with <code>[X]</code> as the second line.</li>
+                    <li>A lever or button one block away from the sign in any right angle direction.</li>
+                    <li>Right clicking a block next to the sign while not holding any item in your hand will toggle the switch(es) or button(s) adjacent to the sign.</li>
+ 
+                </ol>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Light Switches -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Lightswitch_doorlock.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> Light Switches</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>Light switches toggle nearby torches between regular torches and redstone torches, in effect changing the amount of the light in the area. It is recommended that Redstone_pumpkins be used alternatively for your lighting needs. Additionally, nearby lights in other rooms will also toggle with usage of this feature. </p>
+                <h4>Instructions</h4>
+                <ol>
+                    <li>You need a wall sign with <code>[I]</code> or <code>[|]</code> as the second line.</li>
+                    <li>Either a redstone torch or a regular torch above the sign.</li>
+                    <li>A custom range for searching on the third line (optional).</li>
+                    <li>A custom maximum light changes per click on fourth line (optional).</li>
+                    <li>Right clicking the sign will toggle the lights in the general area.</li>
+                </ol>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- LightStone -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/LightStone.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-gears" aria-hidden="true"></i> LightStone Tool</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The LightStone mechanic allows you to get the current light level for a block. Right click any block while holding <strong>GlowStone Dust</strong> to see the light level.
+                    If the light level is high enough that monsters won't spawn, the bar is shown as green. If they are able to spawn at the clicked location, it will be shown as red.</p>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Amp Meter -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/mechanics/craftbook/Ammeter.png" alt="">
+                
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-battery-half" aria-hidden="true"></i> Amp Meter</h3>
+                <h5>Plugin: Craftbook</h5>
+                <p>The ammeter (coal) allows you to get the current level in wires and redstone devices. Right click any redstone device while 
+                    holding coal to see the meter's output. The current in wires decrease by one every block and source blocks emit a level of 15, 
+                    giving us the wire length limit of 15 blocks.</p>
+                
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>coal</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2016 <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbradgillap.com%2Fmc%2Fcrafting.html"><i class="fa fa-html5" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery 1 
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
+    <!--jQuery 2 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- lightbox2 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+</body>
+
+</html>

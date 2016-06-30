@@ -1,0 +1,712 @@
+[
+ {
+   "Plugin":"Minecraft",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/help\n/?",
+   "Arguments":"[plugin]",
+   "Description":"Shows a list of server or plugin commands in the console or in-game.\t",
+   "Category":"Server Binary",
+   "Permission":"minecraft.command.help"
+ },
+ {
+   "Plugin":"Minecraft",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/kill",
+   "Arguments":"",
+   "Description":"Commits suicide.",
+   "Category":"Server Binary",
+   "Permission":"minecraft.command.kill"
+ },
+ {
+   "Plugin":"Minecraft",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/list",
+   "Arguments":"",
+   "Description":"Lists all currently connected players.",
+   "Category":"Server Binary",
+   "Permission":"minecraft.command.list"
+ },
+ {
+   "Plugin":"Minecraft",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/me",
+   "Arguments":"<message>",
+   "Description":"Says a message from the player's point of view: * player1 is building a castle!",
+   "Category":"Server Binary",
+   "Permission":"minecraft.command.me"
+ },
+ {
+   "Plugin":"Minecraft",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/tell",
+   "Arguments":"<player> <message>",
+   "Description":"Allows the user to privately message another player.",
+   "Category":"Server Binary",
+   "Permission":"minecraft.command.tell"
+ },
+ {
+   "Plugin":"Multiverse",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/mv list",
+   "Arguments":"",
+   "Description":"Display a list of all worlds that you can enter.",
+   "Category":"World Management",
+   "Permission":"multiverse.core.list.worlds"
+ },
+ {
+   "Plugin":"Multiverse",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/mv info",
+   "Arguments":"[WORLD] [PAGE #]",
+   "Description":"Displays information about the world you're in or the world you pass in.",
+   "Category":"World Management",
+   "Permission":"multiverse.core.info"
+ },
+ {
+   "Plugin":"Multiverse",
+   "Rank":"Member",
+   "Worlds":"All",
+   "Command":"/mv tp",
+   "Arguments":"{WORLD}",
+   "Description":"The teleport command allows you to teleport yourself or others to a specified world. There are many different permissions associated with this command, with the categories being self and other; allowing you to teleport yourself and others respectively.",
+   "Category":"World Management",
+   "Permission":"multiverse.teleport.self"
+ },
+ {
+   "Plugin":"Multiverse",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/mv who",
+   "Arguments":"[WORLD|-a]",
+   "Description":"Displays who is currently in which worlds. If you want to see who is in a specific world, pass the world name in as the only parameter. By default, /mv who will not show worlds that are empty. If you want to see all worlds simply add either -a or --all to the end of your command: /mvwho -a. The -a/--all flag will override a world provided.",
+   "Category":"World Management",
+   "Permission":"multiverse.core.list.who"
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Member",
+   "Worlds":"All",
+   "Command":"/listen",
+   "Arguments":"channelname",
+   "Description":"Listen to a channel without setting it as the one you are chatting on.",
+   "Category":"Chat Mechanics",
+   "Permission":""
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/afk",
+   "Arguments":"",
+   "Description":"Set yourself as afk",
+   "Category":"Chat Mechanics",
+   "Permission":""
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/reply <br>\n/r",
+   "Arguments":"message",
+   "Description":"Reply to the last message received.",
+   "Category":"Chat Mechanics",
+   "Permission":""
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/channelinfo <br>\n/chi",
+   "Arguments":"",
+   "Description":"Check a channels info.",
+   "Category":"Chat Mechanics",
+   "Permission":"venturechat.channelinfo"
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/chatinfo <br>\n/ci",
+   "Arguments":"",
+   "Description":"View your chat information.",
+   "Category":"Chat Mechanics",
+   "Permission":"venturechat.chatinfo"
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/me",
+   "Arguments":"",
+   "Description":"Send an emote.",
+   "Category":"Chat Mechanics",
+   "Permission":"venturechat.me"
+ },
+ {
+   "Plugin":"venturechat",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/party",
+   "Arguments":"",
+   "Description":"Party commands for creating a chat party.",
+   "Category":"Chat Mechanics",
+   "Permission":"venturechat.party"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/abandonclaim",
+   "Arguments":"",
+   "Description":"Deletes a claim you are standing in.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/claimexplosions",
+   "Arguments":"",
+   "Description":"Toggles if explosions are allowed in a claim.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/trust\n/untrust",
+   "Arguments":"",
+   "Description":"Gives another player permission to edit in your claim.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/accesstrust",
+   "Arguments":"",
+   "Description":"Gives another player permission to use buttons and levers.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/containertrust",
+   "Arguments":"",
+   "Description":"Gives another player permission to use buttons levers beds containers and animals.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/trustlist",
+   "Arguments":"",
+   "Description":"Lists the permissions of the claim you are standing in.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/subdivideclaims",
+   "Arguments":"",
+   "Description":"Switches your shovel to subdivision mode to further divide your claim into subclaims.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/basicclaims",
+   "Arguments":"",
+   "Description":"Puts your shovel back into basic claims mode.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/permissiontrust",
+   "Arguments":"",
+   "Description":"Grants a player permission to share his permission level with others.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/untrust all",
+   "Arguments":"",
+   "Description":"Removes all permissions from all players in a claim.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/abandonallclaims",
+   "Arguments":"",
+   "Description":"Deletes all of your claims.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/buyclaimblocks",
+   "Arguments":"",
+   "Description":"Buy more claim blocks to further extend your empire.",
+   "Category":"Protection",
+   "Permission":"griefprevention.buysellclaimblocks"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/givepet",
+   "Arguments":"",
+   "Description":"Gives away a tamed animal.",
+   "Category":"Protection",
+   "Permission":"griefprevention.givepet"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/claimslist",
+   "Arguments":"",
+   "Description":"Lists a players claim and claimblock details.",
+   "Category":"Protection",
+   "Permission":"griefprevention.claims"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/ignoreplayer\n /unignoreplayer",
+   "Arguments":"",
+   "Description":"Ignore chat messages.",
+   "Category":"Protection",
+   "Permission":"griefprevention.ignore"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/ignoredplayerlist",
+   "Arguments":"",
+   "Description":"List ignored players.",
+   "Category":"Protection",
+   "Permission":"griefprevention.ignore"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/siege",
+   "Arguments":"",
+   "Description":"Siege another players claim.",
+   "Category":"Protection",
+   "Permission":"griefprevention.siege"
+ },
+ {
+   "Plugin":"Grief Prevention",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/trapped",
+   "Arguments":"",
+   "Description":"Escape a land claim you may be trapped in.",
+   "Category":"Protection",
+   "Permission":"griefprevention.trapped"
+ },
+ {
+   "Plugin":"Gringotts",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/money",
+   "Arguments":"?",
+   "Description":"Use Gringotts commands.",
+   "Category":"Economy",
+   "Permission":"gringotts.command"
+ },
+ {
+   "Plugin":"Gringotts",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/money pay",
+   "Arguments":"amount",
+   "Description":"Allow transfer command (pay)",
+   "Category":"Economy",
+   "Permission":"gringotts.transfer"
+ },
+ {
+   "Plugin":"Gringotts",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/money withdraw",
+   "Arguments":"amount",
+   "Description":"Allow withdrawal of money from chest storage to inventory via",
+   "Category":"Economy",
+   "Permission":"gringotts.command.withdraw"
+ },
+ {
+   "Plugin":"Gringotts",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/money deposit",
+   "Arguments":"amount",
+   "Description":"Allow deposit of money to chest storage from inventory via",
+   "Category":"Economy",
+   "Permission":"gringotts.command.deposit"
+ },
+ {
+   "Plugin":"Lockette",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/lockette",
+   "Arguments":"",
+   "Description":"Slap a sign on chests and furnaces to lock them.",
+   "Category":"Protection",
+   "Permission":"lockette.user.*"
+ },
+ {
+   "Plugin":"ShopChest",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/shop create",
+   "Arguments":"<amount> <buy-price <sell-price> normal",
+   "Description":"Allows the player to create a shop. Hold the item you wish to sell and execute the command.",
+   "Category":"Economy Shop",
+   "Permission":"shopchest.create"
+ },
+ {
+   "Plugin":"ShopChest",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"Right click to buy.",
+   "Arguments":"",
+   "Description":"Allows the player to buy something",
+   "Category":"Economy Shop",
+   "Permission":"shopchest.buy"
+ },
+ {
+   "Plugin":"ShopChest",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"Left click to sell.",
+   "Arguments":"",
+   "Description":"Allows the player to sell something",
+   "Category":"Economy Shop",
+   "Permission":"shopchest.sell"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/who\n/list\n/playerlist\n/online\n/players",
+   "Arguments":"[filter]",
+   "Description":"See who is online.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.who"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/motd",
+   "Arguments":"",
+   "Description":"Show the message of the day.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.motd"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/intro",
+   "Arguments":"",
+   "Description":"Replays server's intro.mid file. See MIDI support.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.intro"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/midi",
+   "Arguments":"",
+   "Description":"Plays a MIDI file. See MIDI support.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.midi"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/rules",
+   "Arguments":"",
+   "Description":"Show the rules.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.rules"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/time",
+   "Arguments":"",
+   "Description":"Get the current time.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.time.check"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/time now",
+   "Arguments":"",
+   "Description":"Get the current time.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.time.check"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/afk \n/away",
+   "Arguments":"[status]",
+   "Description":"Sets you as afk, If another user uses /msg or /reply while you are away, it will warn them and tell them your status if given, if configured to do so this will also make you invulnerable. Engaging in activity will set you as no longer being afk.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.away"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/spawn",
+   "Arguments":"",
+   "Description":"Teleport to spawn.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.spawn"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Member",
+   "Worlds":"All",
+   "Command":"/return\n/ret",
+   "Arguments":"<target>",
+   "Description":"Return back to your last location.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.return\ncommandbook.return.other"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/call\n/tpa",
+   "Arguments":"<target>",
+   "Description":"Request a teleport from someone. \n*Tip:* Enable this instead of commandbook.teleport.other to prevent abuse. \nOther players can't arbitrarily teleport you without your permission.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.call"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/home",
+   "Arguments":"",
+   "Description":"Teleport to specified own home in current world.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.home.teleport"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/sethome",
+   "Arguments":"",
+   "Description":"Sets own home at current position.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.home.set"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/homes",
+   "Arguments":"info \ninf",
+   "Description":"Show additional information about a home",
+   "Category":"Mechanics",
+   "Permission":"commandbook.home.info"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/homes",
+   "Arguments":"del \ndelete \nremove \nrem",
+   "Description":"Removes the home named",
+   "Category":"Mechanics",
+   "Permission":"commandbook.home.remove\n*commandbook.home.remove.other"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/warps",
+   "Arguments":"info\ninf",
+   "Description":"Show additional information about a warp",
+   "Category":"Mechanics",
+   "Permission":"commandbook.warp.info"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/warps",
+   "Arguments":"list\nshow",
+   "Description":"List warps",
+   "Category":"Mechanics",
+   "Permission":"commandbook.warp.list"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/me",
+   "Arguments":"",
+   "Description":"Send an action message.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.say.me"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/whereami\n/getpos\n/pos\n/where",
+   "Arguments":"[target]",
+   "Description":"Get your current location.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.whereami\ncommandbook.whereami.compass"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/compass",
+   "Arguments":"[target]",
+   "Description":"Get your current cardinal direction.",
+   "Category":"Mechanics",
+   "Permission":"commandbook.whereami.compass"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/ping",
+   "Arguments":"",
+   "Description":"Says  Pong  back to tell you if the server is responding.",
+   "Category":"Mechanics",
+   "Permission":"(Not applicable)"
+ },
+ {
+   "Plugin":"Commandbook",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/pong",
+   "Arguments":"",
+   "Description":"Tells you something about yourself (seriously, just another dummy command \nto see if the server is responding).",
+   "Category":"Mechanics",
+   "Permission":"commandbook.pong"
+ },
+ {
+   "Plugin":"RecipeGUI",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/recipe",
+   "Arguments":"",
+   "Description":"Display recipes for items in your hand.",
+   "Category":"Information",
+   "Permission":"recipesgui.hand"
+ },
+ {
+   "Plugin":"RecipeGUI",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/recipe",
+   "Arguments":"material_id_name",
+   "Description":"Search for a recipe based on the material ID or name.",
+   "Category":"Information",
+   "Permission":"recipesgui.search"
+ },
+ {
+   "Plugin":"RecipeGUI",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/recipes",
+   "Arguments":"",
+   "Description":"Shows all recipes available.",
+   "Category":"Information",
+   "Permission":"recipesgui.list"
+ },
+ {
+   "Plugin":"Postal Service",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/mail",
+   "Arguments":"",
+   "Description":"Allows access to the ingame mail system. see video for usage.",
+   "Category":"Communication",
+   "Permission":"postalservice.user"
+ },
+ {
+   "Plugin":"Scavenger",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/scvron",
+   "Arguments":"",
+   "Description":"Allow players to enable scavenger for themselves",
+   "Category":"Mechanics",
+   "Permission":"scavenger.self.on"
+ },
+ {
+   "Plugin":"Scavenger",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/scvroff",
+   "Arguments":"",
+   "Description":"Allow players to disable scavenger for themselves",
+   "Category":"Mechanics",
+   "Permission":"scavenger.self.off"
+ },
+ {
+   "Plugin":"Scavenger",
+   "Rank":"Everyone",
+   "Worlds":"All",
+   "Command":"/scvrlist",
+   "Arguments":"",
+   "Description":"List all pending recoveries.",
+   "Category":"Mechanics",
+   "Permission":"scavenger.list"
+ }
+]

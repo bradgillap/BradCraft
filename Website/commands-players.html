@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brad Craft is a production Minecraft server built from an I.T perspective leveraging minimal resources.">
+    <meta name="author" content="Bradley Gillap">
+
+    <title>Brad Craft | Commands | Players</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Bootstrap Table CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link href="css/dragtable.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://bradgillap.com/map"><i class="fa fa-map-o" aria-hidden="true"></i> Map</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="crafting.html">Crafting</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mechanics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="mechanics.html"><i class="fa fa-cog"></i> Build Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="economy.html"><i class="fa fa-money" aria-hidden="true"></i> Economy</a>
+                            </li>
+                            <li>
+                                <a href="landprotection.html"><i class="fa fa-tree" aria-hidden="true"></i> Land Protection</a>
+                            </li>
+                            <li>
+                                <a href="minecarts.html"><i class="fa fa-subway" aria-hidden="true"></i> Minecarts</a>
+                            </li>
+                            <li>
+                                <a href="postal.html"><i class="fa fa-envelope" aria-hidden="true"></i> Postal Service</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commands <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="active">
+                                <a href="commands-players.html"><i class="fa fa-users fa-spin" aria-hidden="true"></i> Players</a>
+                            </li>
+                                                        <li>
+                                <a href="commands-staff.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Staff</a>
+                            </li>
+                            <li>
+                                <a href="commands-admin.html"><i class="fa fa-user-secret" aria-hidden="true"></i> Admin</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Commands
+                    <small>Tabular Data</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.php">Home</a>
+                    </li>
+                    <li>Commands</li>
+                    <li class="active">Players
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+
+        <!-- /.row -->
+        <!-- Content Row -->
+        <div class="row">
+
+          
+        <div style="padding: 10px;" class="table-responsive panel panel-primary">
+            <div class="panel-heading">
+                <h3>Commands - Updated 26/06/2016</h3>
+            </div>
+            <div class="panel-body">
+                <table id="table"
+                       data-toggle="table"
+                       data-show-export="true"
+                       data-search="true"
+                       data-advanced-search="true"
+                       data-id-table="advancedTable"
+                       data-show-columns="true" 
+                       data-click-to-select="true"
+                       data-url="json/user.json"
+                       data-show-toggle="true"
+                       data-show-columns="true"
+                       data-reorderable-columns="true"
+                       >
+                    <thead>
+                        <tr>
+                            <th data-field="state" data-checkbox="true"></th>
+                            <th data-field="Rank" data-sortable="true">Rank</th>
+                            <th data-field="Command" data-sortable="true">Command</th>
+                            <th data-field="Arguments" data-sortable="false">Arguments</th>
+                            <th data-field="Description" data-sortable="false">Description</th>
+                            <th data-field="Plugin" data-sortable="true">Plugin</th>
+
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+     </div>
+
+        <!-- /.row -->
+        
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2016 <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbradgillap.com%2Fmc%2Fcommands.html"><i class="fa fa-html5" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery 1 -->
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> 
+          <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--jQuery 2
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    -->
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap Table -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/extensions/export/bootstrap-table-export.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dragtable.js"></script>
+    <script type="text/javascript" src="js/tableExport.js"></script>
+    
+    <script>
+        var $table = $('#table');
+        $(function () {
+            $('#toolbar').find('select').change(function () {
+                $table.bootstrapTable('destroy').bootstrapTable({
+                    exportDataType: $(this).val()
+                });
+            });
+        })
+    </script>      
+    <script>    
+          var data = [{
+                "name": "bootstrap-table",
+            },   {
+                "name": "scutech-redmine 1",
+
+                }];
+    </script>
+      
+    <script>
+        $(function () {
+            $('#table').bootstrapTable({
+                data: data
+            });
+
+            $(".mybtn-top").click(function () {
+                $('#table').bootstrapTable('scrollTo', 0);
+            });
+
+            $(".mybtn-row").click(function () {
+                var index = +$('.row-index').val(),
+                    top = 0;
+                $('#table').find('tbody tr').each(function (i) {
+                    if (i < index) {
+                        top += $(this).height();
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brad Craft is a production Minecraft server built from an I.T perspective leveraging minimal resources.">
+    <meta name="author" content="Bradley Gillap">
+
+    <title>Brad Craft | Mechanics | Economy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://bradgillap.com/map"><i class="fa fa-map-o" aria-hidden="true"></i> Map</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="crafting.html">Crafting</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mechanics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="mechanics.html"><i class="fa fa-cog"></i> Build Mechanics</a>
+                            </li>
+                            <li class="active">
+                                <a href="economy.html"><i class="fa fa-money fa-spin" aria-hidden="true"></i> Economy</a>
+                            </li>
+                            <li>
+                                <a href="landprotection.html"><i class="fa fa-tree" aria-hidden="true"></i> Land Protection</a>
+                            </li>
+                            <li>
+                                <a href="minecarts.html"><i class="fa fa-subway" aria-hidden="true"></i> Minecarts</a>
+                            </li>
+                            <li>
+                                <a href="postal.html"><i class="fa fa-envelope" aria-hidden="true"></i> Postal Service</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commands <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="commands-players.html"><i class="fa fa-users" aria-hidden="true"></i> Players</a>
+                            </li>
+                                                        <li>
+                                <a href="commands-staff.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Staff</a>
+                            </li>
+                            <li>
+                                <a href="commands-admin.html"><i class="fa fa-user-secret" aria-hidden="true"></i> Admin</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Economy
+                    <small></small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.php">Home</a>
+                    </li>
+                    <li>Mechanics</li>
+                    <li class="active">Economy</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Money and Vaults -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/economy/money.png" alt="">
+                    
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-money" aria-hidden="true"></i> Money &amp; Vaults</h3>
+                <h5>Plugin: Gringotts</h5>
+                <p>Money is very simple to obtain and anyone can enter the market within a few minutes of joining the server. Cobblestone is the preferred currency. All cobblestone held in your inventory is considered money. You may also create a <strong>vault</strong> to store your money in. It is recommended you first consider protecting your space. See <a href="landprotection.html">Land Protection</a>.</p>
+                <h4>Vault Creation Instructions</h4>
+                <ol>
+                    <li>Place a chest on the ground with a wall behind it.</li>
+                    <li>Place a sign on the wall directly above the chest.</li>
+                    <li>On the first line of the sign write the word <code>[vault]</code></li>
+                </ol>
+                <h4>Other Commands</h4>
+                <ul>
+                    <li>Display money total <code>/money</code></li>
+                    <li>Pay a player <code>/money pay amount player</code></li>
+                    <li>Withdraw money from your vault chest <code>/money withdraw amount</code></li>
+                    <li>Deposit money from your vault chest <code>/money deposit amount</code></li>
+                </ul>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>sign</li>
+                    <li><i class="fa-li fa fa-gear"></i>chest</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Money and Vaults -->
+        <div class="row">
+            <div class="col-md-5">
+                
+                    <img class="img-responsive img-hover" src="images/economy/shopchest.png" alt="">
+                    
+            </div>
+            <div class="col-md-7">
+                <h3><i class="fa fa-money" aria-hidden="true"></i> Managing Shops</h3>
+                <h5>Plugin: ShopChest</h5>
+                <p>Players can create their own shops for buying and selling. It's very simple since you don't need a command to buy something but just have to click the chest.</p>
+                <h4>Create a Shop</h4>
+                <ol>
+                    <li>Place a chest somewhere.</li>
+                    <li>Make sure the item you wish to sell is in your hand.</li>
+                    <li>Target the chest with your crosshairs.</li>
+                    <li>Run the command <code>/shop create amount buyprice sellprice</code></li>
+                    <li>You can set the buyprice or the sellprice to 0 to disable buying or selling.</li>
+                    <li>Click the chest that should be the shop.</li>
+                    <li>Place the items you wish to sell in the chest.</li>
+                </ol>
+                <h4>Get Existing Shop Info</h4>
+                <ol>
+                    <li>Run the command <code>/shop info</code></li>
+                    <li>Click the shop you wish to retrieve information on.</li>
+                </ol>
+                <h4>Remove a Shop</h4>
+                <ol>
+                    <li>Run the command <code>/shop remove</code></li>
+                    <li>Click the shop you wish to remove.</li>
+                </ol>
+                <h4>Materials</h4>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-gear"></i>chest</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2016 <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbradgillap.com%2Fmc%2Fcrafting.html"><i class="fa fa-html5" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery 1 
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
+    <!--jQuery 2 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- lightbox2 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+</body>
+
+</html>
