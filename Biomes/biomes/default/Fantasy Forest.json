@@ -1706,6 +1706,7 @@
       "gridYOffset": 0,
       "anchorYOffset": 0
     }
+
   ],
   "maxEWGObjectsPerChunk": 4,
   "xNoiseModifier": 1.2,
