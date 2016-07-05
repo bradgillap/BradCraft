@@ -50,7 +50,7 @@ commandspy:
   worldeditcommands: true
   
 antispam:
-  enabled: true
+  enabled: false
   
   # number of messages to be spam
   spamnumber: 5
@@ -59,7 +59,7 @@ antispam:
   spamtime: 10
   
   # amount of time in minutes for the mute to last, use 0 for untimed mute
-  mutetime: 5
+  mutetime: 10
  
 # Logging chat and commands to a mysql database 
 mysql:
@@ -126,7 +126,7 @@ broadcastafk: false
 formatcleaner: true
 
 # If true, /ignore will block chat from the ignored player as well as PM's
-ignorechat: true
+ignorechat: false
 
 # The message shown to players alerting them no one is in the channel to hear them
 emptychannelalert: "&6No one is listening to you."
@@ -145,40 +145,56 @@ jsonformatting:
     click_name: 'suggest_command'
     click_name_text: '/msg {player_name}'
     hover_prefix:
-    - '&dI am nobody.'
+    - '&dI am default!'
     click_prefix: 'run_command'
     click_prefix_text: '/help'
+    hover_suffix:
+    - '&dI am default suffix!'
+    click_suffix: 'suggest_command'
+    click_suffix_text: '/msg {player_name}'
   Member:
-    priority: 2147483647 # Integer.MAX_VALUE
+    priority: 1000 # Integer.MAX_VALUE
     hover_name:
-    - '&6I am a somebody!'
+    - '&6I am a member.'
     click_name: 'suggest_command'
     click_name_text: '/msg {player_name}'
     hover_prefix:
-    - '&dPeople know me.'
+    - '&dI am a member.'
     click_prefix: 'run_command'
     click_prefix_text: '/help'
+    hover_suffix:
+    - '&dI am a member.'
+    click_suffix: 'suggest_command'
+    click_suffix_text: '/msg {player_name}'
   Staff:
-    priority: 2147483647 # Integer.MAX_VALUE
+    priority: 100 # Integer.MAX_VALUE
     hover_name:
-    - '&6Staff'
+    - '&6I am staff'
     click_name: 'suggest_command'
     click_name_text: '/msg {player_name}'
     hover_prefix:
-    - '&dI just like...work here.'
+    - '&dI am staff.'
     click_prefix: 'run_command'
     click_prefix_text: '/help'
-  Owner:
+    hover_suffix:
+    - '&dI am staff'
+    click_suffix: 'suggest_command'
+    click_suffix_text: '/msg {player_name}'
+  Admin:
     priority: 1 # Lowest Priority
     hover_name:
-    - '&cOwner'
+    - '&cOwner of the server!'
     - '&bMessage me for help!'
     click_name: 'suggest_command'
-    click_name_text: '/msg {player_name}'
+    click_name_text: '/website'
     hover_prefix:
     - '&dServer Owner'
     click_prefix: 'run_command'
     click_prefix_text: '/help'
+    hover_suffix:
+    - '&dI am Owner suffix!'
+    click_suffix: 'suggest_command'
+    click_suffix_text: '/msg {player_name}'
     
 # The icon is the block shown in the GUI
 # The text is the display name of the block icon
@@ -208,7 +224,7 @@ venturegui:
     command: '/removemessage {hash} true'
     slot: 7
     
-guiicon: '&c[✓]'
+guiicon: '&c [✓]'
 guitext: '&cOpen Moderation GUI'
 guirows: 1
 
@@ -231,11 +247,6 @@ broadcast:
 # Use None for no permissions
 # The number of arguments is the minimum number of required arguments, use 0 for no required arguments
 alias:  
-  vote:
-    arguments: 0
-    permissions: None
-    components:
-    - 'Message: &6Vote here: www.votelinkhere.com'
   bane:
     arguments: 2
     permissions: bane
@@ -251,17 +262,12 @@ alias:
     arguments: 0
     permissions: None
     components:
-    - 'Message: &a www.bradgillap.com/mc'
+    - 'Message: &aThis is our website: http://mc.bradgillap.com'
   map:
     arguments: 0
     permissions: None
     components:
-    - 'Message: &a map.bradgillap.com'
-#  mail:
-#    arguments: 0
-#    permissions: None
-#    components:
-#    - 'Command: /email$'
+    - 'Message: &aThis is our map: http://map.bradgillap.com'
   tell:
     arguments: 0
     permissions: None
@@ -298,11 +304,11 @@ alias:
 # Arguments are accepted
 irc:
   enabled: false
-  nick: 'MineverseChatBot'
-  login: 'MineverseChatbot'
+  nick: 'bradcraftbot'
+  login: 'bradcraftbot'
   server: 'irc.freenode.net'
   port: 6667
-  channel: '#mineversechat'
+  channel: '##bradcraft'
   trustallcertificates: true
   # the delay before the bot logs into the channel in seconds
   # increase the time if the bot fails to login
@@ -354,7 +360,7 @@ irc:
 channels:
   Global:
     color: dark_green
-    chatcolor: dark_green
+    chatcolor: white
     mutable: true
     filter: true
     autojoin: true
@@ -364,5 +370,5 @@ channels:
     bungeecord: false
     alias: g
     permissions: None
-    format: '&f[&2Pub&f] {nickname}'
+    format: '&f[&2Pub&f] {prefix} {nickname}&2:'
     irc: false
