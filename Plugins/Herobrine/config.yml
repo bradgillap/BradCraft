@@ -1,0 +1,90 @@
+config:
+  ShowInterval: 144000
+  ShowRate: 2
+  HitPlayer: false
+  SendMessages: true
+  Lightning: false
+  DestroyTorches: true
+  DestroyTorchesRadius: 5
+  Worlds:
+  - world
+  - brianslegacy
+  TotemExplodes: true
+  OnlyWalkingMode: true
+  BuildStuff: true
+  PlaceSigns: true
+  UseTotem: true
+  WriteBooks: true
+  Killable: true
+  UsePotionEffects: true
+  CaveChance: 10
+  BookChance: 5
+  SignChance: 5
+  DeathMessage: You cannot kill me!
+  Messages:
+  - Even Notch can't save you now!
+  - Fear me!
+  - Welcome to my world!
+  - I am your death!
+  - Grave awaits you!
+  SignMessages:
+  - I'm watching.
+  - Death...
+  - Eyes in dark...
+  BookMessages:
+  - White eyes in dark...
+  - '... was last what I saw ...'
+  - '... before i was dead.'
+  Drops:
+    '264':
+      count: 1
+      chance: 20
+  BuildPyramids: false
+  BuildPyramidOnChunkPercentage: 5
+  UseGraveyardWorld: true
+  BuryPlayers: true
+  SpawnWolves: true
+  SpawnBats: true
+  WalkingModeRadius:
+    X: 1000
+    Z: 1000
+  BuildInterval: 72000
+  BuildTemples: false
+  BuildTempleOnChunkPercentage: 5
+  UseArtifacts:
+    Bow: true
+    Sword: true
+    Apple: true
+  HerobrineHP: 300
+  AttackCreative: false
+  AttackOP: true
+  SecuredArea:
+    Build: false
+    Attack: true
+    Haunt: true
+    Signs: true
+    Books: true
+  UseHeads: true
+  UseCustomItems: false
+  CustomItemsList:
+  - ItemExample
+  UseAncientSword: true
+  UseNPC:
+    Guardian: true
+    Warrior: true
+    Demon: true
+  ItemInHand: '0'
+  Explosions: true
+  Burn: false
+  Curse: true
+  Limit:
+    Books: 1
+    Signs: 1
+    Heads: 1
+  UseIgnorePermission: false
+  Name: Herobrine
+  HerobrineWorldName: world_herobrine_graveyard
+  HerobrineUUID: f84c6a79-0a4e-45e0-879b-cd49ebd4c4e2
+  UseHauntSound: true
+  ShowInTabList: true
+  CheckForUpdates: true
