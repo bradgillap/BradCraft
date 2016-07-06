@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "rarity": 1.0,
   "biomeType": "RIVER",
   "useDungeons": true,
   "dungeonChance": 8,

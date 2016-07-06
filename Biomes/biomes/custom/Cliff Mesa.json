@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "rarity": 1.0,
   "biomeType": "DESERT",
   "useDungeons": true,
   "dungeonChance": 8,
@@ -1207,6 +1208,31 @@
       "minY": 64,
       "maxY": 200,
       "maxSlope": 0.5,
+      "minSlope": 0.0,
+      "snapToXGrid": -1,
+      "snapToYGrid": -1,
+      "gridXOffset": 0,
+      "gridYOffset": 0,
+      "anchorYOffset": 0
+    },
+    {
+      "density": 0.0,
+      "size": "MEDIUM",
+      "type": "DECO",
+      "blocksRequiredUnderneath": [
+        "GRASS"
+      ],
+      "blacklistedDecoBlocks": [],
+      "spawnOnGround": true,
+      "overrideExsistingBlocks": false,
+      "allowRotation": true,
+      "applyPhysics": false,
+      "applyAir": false,
+      "fixFlyingRoots": true,
+      "replaceAir": true,
+      "minY": 50,
+      "maxY": 200,
+      "maxSlope": 0.7,
       "minSlope": 0.0,
       "snapToXGrid": -1,
       "snapToYGrid": -1,

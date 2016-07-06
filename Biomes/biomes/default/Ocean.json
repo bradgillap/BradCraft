@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "rarity": 1.0,
   "biomeType": "AQUATIC",
   "useDungeons": true,
   "dungeonChance": 8,
