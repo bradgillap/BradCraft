@@ -9,6 +9,8 @@ worlds["Brads Nether"] = "/home/minecraft/multicraft/servers/server1/world_nethe
 worlds["Brians Legacy"] = "/home/minecraft/multicraft/servers/server1/BriansLegacy"
 worlds["Lobby"] = "/home/minecraft/multicraft/servers/server1/Lobby"
 
+# Custom render mode for more lighting in the nether.
+my_nether = [Base(),EdgeLines(),SmoothLighting(strength=0.5)]
 
 # First line: the group of renders it belongs to from the world var reference above
 # Second line: The first word of the dropdown e.g survival -
@@ -32,6 +34,25 @@ worlds["Lobby"] = "/home/minecraft/multicraft/servers/server1/Lobby"
 #    "optimizeimg":[pngnq(sampling=3), optipng(olevel=2)], #Optimization levels for quality and throughput.
 #}
 
+#POI Filters
+
+
+
+def poi_sign_filter(poi):
+    if poi['id'] == 'Sign': # Look for things with the id "Sign"
+        if 'text1' in poi:  # of those, look for things with a key 'text1'
+            if 'poi' in poi['text1']:   # Of those, look for ones with 'poi' in the 'text1' value
+                return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])  # Return a marker
+
+def playerIcons(poi):
+    if poi['id'] == 'Player':
+        poi['icon'] = "http://overviewer.org/avatar/%s" % poi['EntityId']
+        return "Last known location for %s" % poi['EntityId']
+
+def signFilter(poi):
+    if poi['id'] == 'Sign':
+        return "\n".join([poi['Text1'], poi['Text2'], poi['Text3'], poi['Text4']])
+
 ################################BEGIN BRADS###############################
 
 #########
@@ -44,6 +65,8 @@ renders["bradworldday"] = {
     "dimension": "overworld",
     "defaultzoom": 5,
     "optimizeimg":[pngnq(sampling=3), optipng(olevel=2)],
+    "markers": [dict(name="Players Last Location", filterFunction=playerIcons),
+		dict(name="Places", checked="true", filterFunction=poi_sign_filter)]
 }
 
 renders["bradworldnight"] = {
@@ -53,6 +76,9 @@ renders["bradworldnight"] = {
     "dimension": "overworld",
     "defaultzoom": 5,
     "optimizeimg":[pngnq(sampling=6), optipng(olevel=2)],
+    "markers": [dict(name="Players Last Location", filterFunction=playerIcons),
+                dict(name="Places", filterFunction=poi_sign_filter)]
+
 }
 
 renders["bradworldcaves"] = {
@@ -67,7 +93,7 @@ renders["bradworldcaves"] = {
 renders["bradworldnether"] = {
     "world": "Brads Nether",
     "title": "Nether",
-    "rendermode": nether_smooth_lighting,
+    "rendermode": my_nether,
     "dimension": "nether",
     "defaultzoom": 5,
     "optimizeimg":[pngnq(sampling=10), optipng(olevel=2)],
@@ -128,6 +154,9 @@ renders["brianworldday"] = {
     "dimension": "overworld",
     "defaultzoom": 5,
     "optimizeimg":[pngnq(sampling=6), optipng(olevel=2)],
+    "markers": [dict(name="Players Last Location", filterFunction=playerIcons),
+                dict(name="Places", filterFunction=poi_sign_filter)]
+
 }
 
 renders["brianworldnight"] = {
