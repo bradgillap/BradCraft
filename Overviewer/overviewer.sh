@@ -16,7 +16,7 @@ echo $pid > $pidfile
 # nice -n 19 tries to give the processor a break in priority (20 - 19) / (20 - 0) = 0.05
 # Therefore nice -n 10 will give 50% priority
 # And nice -n 5 is 75 percent priority
-# 
 nice -n 19 /usr/bin/overviewer.py --config=/etc/overviewer/config --verbose
+nice -n 19 /usr/bin/overviewer.py --config /etc/overviewer/config --genpoi
 chown -R web2:client1 /var/www/clients/client1/web2/web/map
 rm $pidfile
